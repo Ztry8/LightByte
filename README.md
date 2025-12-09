@@ -141,3 +141,5 @@ $ lightbyte compress dialogues
 226
 ```
 
+### License
+Licensed under the [BSD 3-Clause License](https://github.com/Ztry8/LightByte/tree/main?tab=BSD-3-Clause-1-ov-file)
