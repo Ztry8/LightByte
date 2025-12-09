@@ -14,7 +14,7 @@ For this, I created a lightweight program that compresses and encrypts game file
 This program compresses a folder with files into a `.pak` archive using the [zstd](https://en.wikipedia.org/wiki/Zstd)   
 and encrypts it with [ChaCha20-Poly1305](https://en.wikipedia.org/wiki/ChaCha20-Poly1305).
 
-This program was mainly created for gamedev, but you can use it somewhere else.
+This program was mainly created for game development, but it can be used for other purposes as well.
 
 ### Archive structure
 1. **Files count** – 32-bit unsigned integer (`u32`)  
