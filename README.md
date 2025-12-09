@@ -94,7 +94,7 @@ $ lightbyte compress dialogues
 # => file `dialogues.pak` created
 ```
 
-#### Example of `key` file   
+#### Example of key file   
 **(Do not use this key! Your key must remain private and no one should have access to it.)**
 ```
 159
