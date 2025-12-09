@@ -1,0 +1,30 @@
+[package]
+name = "lightbyte"
+version = "0.1.0"
+edition = "2024"
+authors = ["Ztry8 (AslanD)"] 
+readme = "README.md"
+license = "BSD-3-Clause"
+repository = "https://github.com/Ztry8/LightByte"
+description = "Utility to compress and encrypt game assets"
+keywords = ["gamedev", "archive", "pak", "assets-management", "security-tools"]
+
+[dependencies]
+rand = { version = "0.9.2", default-features = false, features = ["std", "os_rng"] }
+chacha20poly1305 = { version = "0.10.1", features = ["std"] }
+zstd = "0.13.3"
+walkdir = "2"
+
+[profile.dev.package.'*']
+strip = true
+debug = false
+opt-level = 3
+codegen-units = 1
+
+[profile.release]
+strip = true
+debug = false
+opt-level = "z"
+panic = "abort"
+lto = true
+codegen-units = 1
