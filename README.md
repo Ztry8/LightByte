@@ -1,4 +1,6 @@
 # LightByte
+[![GitHub last commit](https://img.shields.io/github/last-commit/ztry8/lightbyte)](https://github.com/ztry8/lightbyte)
+[![License](https://img.shields.io/github/license/ztry8/lightbyte)](https://github.com/ztry8/lightbyte/blob/main/LICENSE)
 ## Fast and simple utility to compress and encrypt game assets
 
 ### About
@@ -140,6 +142,3 @@ $ lightbyte compress dialogues
 95
 226
 ```
-
-### License
-Licensed under the [BSD 3-Clause License](https://github.com/Ztry8/LightByte/tree/main?tab=BSD-3-Clause-1-ov-file)
