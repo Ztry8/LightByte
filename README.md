@@ -29,13 +29,21 @@ This program was mainly created for game development, but it can be used for oth
      The size of the file content in bytes.
    - **File content** – array of 8-bit unsigned integers (`u8`)  
      The actual file data.
+     
+### Why these algorithms?
+[ChaCha20-Poly1305](https://en.wikipedia.org/wiki/ChaCha20-Poly1305) is fast, secure, and authenticated encryption, ideal for games and cross-platform use.  
+[Zstandard (zstd)](https://en.wikipedia.org/wiki/Zstd) is used for high-speed compression with a good balance between size and performance.
 
 ### Building
+You only need [rustc and cargo](https://rust-lang.org/tools/install/). Optionally, you can install [git](https://git-scm.com/install/).
+
 ```bash
 git clone https://github.com/Ztry8/LightByte/
 cd LightByte
 cargo build
 ```
+
+The program is cross-platform and works on any desktop OS.
 
 ### Using
 There are two operations:
@@ -45,6 +53,8 @@ Generates a `key` file used for archive encryption.
 
 The key is an array of 32 bytes. It is used to encrypt and decrypt your archive,  
 so be careful with it and do not share this file with anyone.
+
+If you lose the key file, you will not be able to decompress the archive.
 
 The key is generated using the operating system's random number generator,  
 making it cryptographically secure.
